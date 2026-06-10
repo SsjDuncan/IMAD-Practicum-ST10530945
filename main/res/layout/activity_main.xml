@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/b16827e7_a962_43f5_91de_fb9060ed1b71"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnnext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="148dp"
+        android:backgroundTint="#B46349"
+        android:text="Next Screen"
+        app:layout_constraintTop_toBottomOf="@+id/edtcomm"
+        tools:layout_editor_absoluteX="1dp" />
+
+    <Button
+        android:id="@+id/btngear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="288dp"
+        android:layout_marginTop="148dp"
+        android:backgroundTint="#B46349"
+        android:text="Add Gear"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtcomm" />
+
+    <EditText
+        android:id="@+id/edtcomm"
+        android:layout_width="230dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:fontFamily="monospace"
+        android:inputType="text"
+        android:text="Enter Comments"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtquan" />
+
+    <EditText
+        android:id="@+id/edtquan"
+        android:layout_width="228dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:fontFamily="monospace"
+        android:inputType="text"
+        android:text="Enter Quantity"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtcat" />
+
+    <EditText
+        android:id="@+id/edtcat"
+        android:layout_width="229dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:fontFamily="monospace"
+        android:inputType="text"
+        android:text="Enter Category"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtname" />
+
+    <EditText
+        android:id="@+id/edtname"
+        android:layout_width="234dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:fontFamily="monospace"
+        android:inputType="text"
+        android:text="enter item name"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="198dp"
+        android:layout_height="177dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toEndOf="@+id/btnnext"
+        app:layout_constraintTop_toBottomOf="@+id/btngear"
+        app:srcCompat="@drawable/campfire" />
+
+    <Button
+        android:id="@+id/btntotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="116dp"
+        android:layout_marginTop="92dp"
+        android:backgroundTint="#B46349"
+        android:text="Total Items Packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtcomm" />
+
+    <TextView
+        android:id="@+id/txttotal"
+        android:layout_width="113dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="144dp"
+        android:layout_marginTop="36dp"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtcomm" />
+</androidx.constraintlayout.widget.ConstraintLayout>

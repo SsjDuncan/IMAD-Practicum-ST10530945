@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/_2d1988b_3ee9_43c7_a8ee_3b67727d278c"
+    tools:context=".screentwo">
+
+    <TextView
+        android:id="@+id/txtout"
+        android:layout_width="344dp"
+        android:layout_height="312dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="28dp"
+        android:fontFamily="monospace"
+        android:textColor="#1F1E1E"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btndis"
+        android:layout_width="140dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="420dp"
+        android:backgroundTint="#E91E63"
+        android:fontFamily="monospace"
+        android:text="Display"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnback"
+        android:layout_width="145dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="80dp"
+        android:backgroundTint="#E91E63"
+        android:fontFamily="monospace"
+        android:text="Back to Base"
+        app:layout_constraintStart_toEndOf="@+id/btndis"
+        app:layout_constraintTop_toBottomOf="@+id/txtout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
